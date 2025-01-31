@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import Momo from "../assets/Momo.png";
+import Momo from "../assets/momo.png";
 import { FaCartArrowDown } from "react-icons/fa";
 import { cartContext } from "../Context/CartProvider";
 import { useContext } from "react";
@@ -28,8 +28,8 @@ function NavBar() {
       <div className=" flex items-center gap-x-6  text-slate-400 ">
         <NavLink to="/about">About Us</NavLink>
         <NavLink to="/menu">Our Menu</NavLink>
-        <NavLink to="/service">Our Services</NavLink>
-        <NavLink to="/allergyAdviced">Allergy Advice </NavLink>
+        <NavLink to="/services">Our Services</NavLink>
+        <NavLink to="/advice">Allergy Advice </NavLink>
 
         {isAuthenticated ? (
           <NavLink
